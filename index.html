@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Movie App</title>
+  <link rel="icon" href="	https://develekko.github.io/movie/assets/images/logo.png">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class=" vh-100 ">
+
+  <div id="loading">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <span class="loader"></span>
+
+    </div>
+  </div>
+
+  <div class="arrow  ">
+    <i class="fa-solid fa-arrow-up fs-5 " style="color: #ffffff; "></i>
+  </div>
+
+  <section id="home" class="p-5">
+    <nav>
+      <div class="slider col-md-12">
+        <div class="class h-100 ">
+          <p class="Now d-block pt-5" href="">Now Playing</p>
+          <p class="Popular d-block pt-5" href="">Popular</p>
+          <p class=" TopRated d-block pt-5" href="">Top Rated</p>
+          <p class="Upcoming d-block pt-5" href=""> Upcoming</p>
+          <p><a class=" d-block pt-5" href="#contact"> Contact Us</a></p>
+        </div>
+
+        <div class="icons ">
+          <a href=""><i class="fa-brands fa-facebook-f p-2" style="color: #ffffff;"></i></a>
+          <a href=""><i class="fa-brands fa-twitter p-2" style="color: #ffffff;"></i></a>
+          <a href=""><i class="fa-solid fa-globe p-2" style="color: #ffffff;"></i></a>
+          <p class="pb-5">Copyright © 2022 All Rights Reserved. <br>Created by <a href="https://github.com/Reem-ousama"
+              class="link-danger fw-bold" target="_blank">Reem Ousama</a></p>
+        </div>
+
+
+      </div>
+      <div class="slider-white d-flex flex-column justify-content-between align-items-center pt-2">
+        <div class="img d-flex flex-column justify-content-between align-items-center">
+          <img src="https://develekko.github.io/movie/assets/images/logo.png" alt="logo-pic" class="w-50">
+        </div>
+        <div class="close-icon ">
+          <i class="fa-solid fa-bars" style="color: #000000;"></i>
+        </div>
+        <div class="shared pb-4">
+          <a href=""><i class="fa-solid fa-globe d-block" style="color: #000000;"></i></a>
+          <a href=""><i class="fa-solid fa-share-nodes " style="color: #000000;"></i></a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="search col-md-12 ">
+            <div class=" w-50 m-auto ">
+              <input onkeypress="search()" id="search" type="search" placeholder="Search"
+                class="input-search p-2 rounded-pill text-light bg-transparent">
+            </div>
+
+
+          </div>
+          <div class="movies mt-5">
+            <div class="row row-cols-1 row-cols-md-3  g-4" id="col">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-light fw-light">Contact Us</h1>
+
+          <div class="inputs m-5 row">
+            <!-- <div class="col-md-"> -->
+            <div class="col-lg-6 d-inline-block ">
+              <input onblur="validationName()" type="text" name="name" id="Name" placeholder="Enter Your Name" required
+                class=" input-g bg-transparent text-light  fs-5 text-center p-1 m-2">
+              <p id="namep" class="text-info"></p>
+            </div>
+            <div class="col-lg-6 d-inline-block ">
+              <input onblur="validationEmail()" type="email" name="email" id="email" placeholder="Enter Your Email"
+                required class="input-g bg-transparent text-light fs-5 text-center p-1 m-2">
+              <p id="emailp" class="text-info"></p>
+            </div>
+            <div class="col-lg-6 d-inline-block ">
+              <input onblur="validationPhone()" type="tel" name="Phone" id="Phone" placeholder="Enter Your Phone"
+                required class="input-g bg-transparent text-light fs-5 text-center p-1 m-2">
+              <p id="Phonep" class="text-info"></p>
+
+            </div>
+            <div class="col-lg-6 d-inline-block ">
+              <input onblur="validationAge()" type="number" name="age" id="age" placeholder="Enter Your Age" required
+                class="input-g bg-transparent text-light fs-5 text-center p-1 m-2">
+              <p id="agep" class="text-info"></p>
+            </div>
+            <div class="col-lg-6 d-inline-block ">
+              <input onblur="validationPassword()" type="password" name="pass" id="pass"
+                placeholder="Enter Your Password" required
+                class="input-g bg-transparent text-light fs-5 text-center p-1 m-2">
+              <p id="passp" class="text-info"></p>
+
+            </div>
+            <div class="col-lg-6 d-inline-block ">
+              <input onblur="validationPassword()" type="password" name="pass" id="pass"
+                placeholder="ReEnter Your Password" required
+                class="input-g bg-transparent text-light fs-5 text-center p-1 m-2">
+              <p id="passp" class="text-info"></p>
+
+            </div>
+
+            <button class="btn mt-5">Submit</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
